@@ -9,5 +9,6 @@ export const PropertyTypeButtonWrapper = styled.div `
 
     p {
         color: #4A148C;
+        text-align: center;
     }
 ` 

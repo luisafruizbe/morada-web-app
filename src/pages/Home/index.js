@@ -1,6 +1,9 @@
 import { Fragment } from "react";
 import { PropertyTypeButton } from "./components/PropertyTypeButton";
-import { PropertyTypesContainer } from "./styles";
+import { PropertyWelcome } from "./components/PropertyWelcome";
+import { PropertyTypesContainer, PropertyWelcomeContainer } from "./styles";
+
+let userLogin = "Juan";
 
 const PropertiesTypes = [
     { icon: 'icono-apartamento', label: 'Apartamentos'},
@@ -13,13 +16,15 @@ const PropertiesTypes = [
 
 export const Home = () => (
     <Fragment>
-         <h1>home - morada</h1>
+        <PropertyWelcomeContainer>
+            <PropertyWelcome name={userLogin}/>
+        </PropertyWelcomeContainer>
 
-         <PropertyTypesContainer>
+        <PropertyTypesContainer>
          {
              PropertiesTypes.map(item => <PropertyTypeButton icon={item.icon} label={item.label} /> )
          }
-         </PropertyTypesContainer>
+        </PropertyTypesContainer>
          
     </Fragment>
    

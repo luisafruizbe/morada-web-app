@@ -4,3 +4,8 @@ export const PropertyTypesContainer = styled.section `
    display: flex;
    overflow-x: scroll;
 `;
+
+export const PropertyWelcomeContainer = styled.section `
+   display: flex;
+`;
+
