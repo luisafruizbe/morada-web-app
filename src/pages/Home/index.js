@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { PropertyTextHeader } from "./components/PropertyTextHeader";
 import { PropertyTypeButton } from "./components/PropertyTypeButton";
 import { PropertyWelcome } from "./components/PropertyWelcome";
 import { PropertyTypesContainer, PropertyWelcomeContainer } from "./styles";
@@ -19,7 +20,7 @@ export const Home = () => (
         <PropertyWelcomeContainer>
             <PropertyWelcome name={userLogin}/>
         </PropertyWelcomeContainer>
-
+        <PropertyTextHeader/>
         <PropertyTypesContainer>
          {
              PropertiesTypes.map(item => <PropertyTypeButton icon={item.icon} label={item.label} /> )
