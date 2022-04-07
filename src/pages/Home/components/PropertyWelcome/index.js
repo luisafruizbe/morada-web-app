@@ -6,15 +6,21 @@ import { IconBase } from "react-icons";
 
 export const PropertyWelcome = ({name}) => (
 
-    <PropertyWelcomeWrapper>
-        <div className="userClass">
-            <FaUserCircle/>
-            <p>Welcome {name}</p>
-        </div>
-        
-        <div className="notificationClass">
-            <IoBulbOutline/>
-        </div>
-        
-    </PropertyWelcomeWrapper>
+    <Fragment>
+
+         <PropertyWelcomeWrapper>
+            <div>
+                <section>
+                    <FaUserCircle/>
+                </section>
+                <p>Bienvenido {name}</p>
+            </div>
+            <section>
+                <IoBulbOutline/>
+            </section>
+
+        </PropertyWelcomeWrapper>
+
+    </Fragment>
+   
 )
