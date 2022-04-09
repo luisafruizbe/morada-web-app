@@ -3,15 +3,17 @@ import { PropertyTextHeader } from "./components/PropertyTextHeader";
 import { PropertyTypeButton } from "./components/PropertyTypeButton";
 import { PropertyWelcome } from "./components/PropertyWelcome";
 import { PropertyTypesContainer, PropertyWelcomeContainer } from "./styles";
+import { IoBusiness, IoHome, IoMap, IoLocationSharp, IoStorefront} from "react-icons/io5";
+import { PropertyCard } from "./components/PropertyCard";
 
 let userLogin = "Juan";
 
 const PropertiesTypes = [
-    { icon: 'icono-apartamento', label: 'Apartamentos'},
-    { icon: 'icono-casa', label: 'Casas'},
-    { icon: 'icono-lote', label: 'Lotes'},
-    { icon: 'icono-finca', label: 'Fincas'},
-    { icon: 'icono-local', label: 'Locales'},
+    { icon: IoBusiness, label: 'Apartamentos'},
+    { icon: IoHome, label: 'Casas'},
+    { icon: IoLocationSharp, label: 'Lotes'},
+    { icon: IoMap, label: 'Fincas'},
+    { icon: IoStorefront, label: 'Locales'},
 
 ];
 
@@ -26,6 +28,10 @@ export const Home = () => (
              PropertiesTypes.map(item => <PropertyTypeButton icon={item.icon} label={item.label} /> )
          }
         </PropertyTypesContainer>
+
+        <PropertyCard>
+            
+        </PropertyCard>
          
     </Fragment>
    

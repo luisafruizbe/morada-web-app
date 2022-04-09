@@ -1,10 +1,12 @@
-import { PropertyTypeButtonWrapper } from "./styles";
-import { IoAirplaneOutline } from "react-icons/io5";
+import { IconWrapper, PropertyTypeButtonWrapper } from "./styles";
 
-export const PropertyTypeButton = ({icon , label}) => (
+export const PropertyTypeButton = ({ icon:Icon , label }) => (
     
   <PropertyTypeButtonWrapper>
-    <IoAirplaneOutline/>
-     <p>{label}</p>
+    <IconWrapper>
+      <Icon/>
+    </IconWrapper>
+    
+    <p>{label}</p>
   </PropertyTypeButtonWrapper>
 )

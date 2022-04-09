@@ -6,9 +6,32 @@ export const PropertyTypeButtonWrapper = styled.div `
 
     min-width: 150px;
     margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     p {
+        margin: 5px 0 10px;
         color: #4A148C;
-        text-align: center;
+    }
+
+    &:hover {
+        background: #4A148C;
+        cursor: pointer;
+        svg{
+            color: #fff;
+        }
+        p{
+            color: #fff;
+        }
     }
 ` 
+
+export const IconWrapper = styled.div `
+    margin-top: 10px;
+
+    svg{
+        font-size: 2em;
+        color: #4A148C;
+    }
+` ;
