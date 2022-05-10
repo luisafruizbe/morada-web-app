@@ -1,9 +1,9 @@
 import styled from 'styled-components'
+import { PRIMARY_COLOR } from '../../../../constants/styles';
 
 export const PropertyTypeButtonWrapper = styled.div `
-    background-color: #F3E5F5;
+    background-color: ${props => props.selected ? PRIMARY_COLOR : '#F3E5F5'} ;
     border-radius: 10px;
-
     min-width: 150px;
     margin: 0 5px;
     display: flex;
@@ -29,9 +29,8 @@ export const PropertyTypeButtonWrapper = styled.div `
 
 export const IconWrapper = styled.div `
     margin-top: 10px;
-
     svg{
         font-size: 2em;
-        color: #4A148C;
+        color: ${props => props.selected ? '#fff' : PRIMARY_COLOR};
     }
 ` ;

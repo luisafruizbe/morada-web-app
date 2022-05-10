@@ -1,9 +1,9 @@
 import { IconWrapper, PropertyTypeButtonWrapper } from "./styles";
 
-export const PropertyTypeButton = ({ icon:Icon , label }) => (
+export const PropertyTypeButton = ({ icon:Icon , label, selected,id, onPress}) => (
     
-  <PropertyTypeButtonWrapper>
-    <IconWrapper>
+  <PropertyTypeButtonWrapper onClick={() => onPress(id)} selected = {selected}>
+    <IconWrapper selected = {selected}>
       <Icon/>
     </IconWrapper>
     

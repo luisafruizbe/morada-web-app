@@ -29,7 +29,4 @@ export const PropertyInfoWrapper = styled.div `
     h3{
         margin: 0px;
     }
-
-
-
 ` ;
