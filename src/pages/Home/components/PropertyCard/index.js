@@ -1,5 +1,6 @@
 import { Subtitle } from "../../../../globalStyles";
 import { PropertyBusinessType } from "../PropertyBusinessType";
+import { PropertyPrice } from "../PropertyPrice";
 import { PropertyTypeLabel } from "../PropertyTypeLabel";
 import { CardImageWrapper, PropertyCardWrapper, PropertyInfoWrapper } from "./styles";
 
@@ -16,7 +17,7 @@ export const PropertyCard = () => (
             </Subtitle>
             <PropertyTypeLabel/>
             <PropertyBusinessType/>
-            <p>$400'000.000</p>
+            <PropertyPrice/>
        </PropertyInfoWrapper>
     </PropertyCardWrapper>
 )
