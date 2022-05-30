@@ -1,7 +1,7 @@
 import {Page} from '../../components/Page'
 import { FormControl, PageTitle, FormControlInput, FormControlAction } from '../../globalStyles'
 import { Button } from '../../components/Button'
-import { IoEye, IoEyeOff } from "react-icons/io5"
+import { IoEyeOff } from "react-icons/io5"
 import { ButtonIcon } from '../../components/ButtonIcon'
 import { useState } from 'react'
 
@@ -38,6 +38,13 @@ export const Login = () => {
                 <br/>
                 <Button label="Ingresa" onPress={() => alert('iniciar sesion')}/>
             </form>
+            <br />
+            <p>
+                ¿Aun no tienes cuenta?
+                <br /> 
+                <a href='http://localhost:3000/Signup'>Registrate</a>
+            </p>
+            
         </Page>
     )
 };
