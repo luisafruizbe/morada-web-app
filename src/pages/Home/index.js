@@ -10,7 +10,7 @@ import { Page } from "../../components/Page";
 let userLogin = "Luisa Fernanda Ruiz";
 
 const PropertiesTypes = [
-    { id:1, icon: IoBusiness, label: 'Apartamentos'},
+    { id:1, icon: IoBusiness, label: 'Apartamentos', ubication: 'Laureles, Medellín'},
     { id:2, icon: IoHome, label: 'Casas'},
     { id:3, icon: IoLocationSharp, label: 'Lotes'},
     { id:4, icon: IoMap, label: 'Fincas'},
