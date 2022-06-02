@@ -3,8 +3,15 @@ import { FormControl, FormControlInput, PageTitle, FormControlAction } from '../
 import { Button } from '../../components/Button'
 import { IoEyeOff } from "react-icons/io5"
 import { ButtonIcon } from '../../components/ButtonIcon'
+import { useState } from 'react';
 
 export const Signup = () => {
+
+    const [visiblePass, setVisiblePass] = useState(false);
+
+    const tooglePassWordVisible = () => {
+        setVisiblePass(!visiblePass)
+    }
 
     return (
         <Page>
@@ -45,23 +52,20 @@ export const Signup = () => {
                     <FormControlInput>
                         <FormControlAction>
                             <label>Contraseña</label>
-                            <input type="password" />
+                            <input type={visiblePass ? "text" : "password"} />
                         </FormControlAction>
                     </FormControlInput>
                     <div>
-                        <ButtonIcon icon={IoEyeOff}  />
+                        <ButtonIcon icon={IoEyeOff} onPress={tooglePassWordVisible} />
                     </div>
                 </FormControl>
                 <FormControl>
                     <FormControlInput>
                         <FormControlAction>
                             <label>Verificación de contraseña</label>
-                            <input type="password" />
+                            <input type={visiblePass ? "text" : "password"}/>
                         </FormControlAction>
                     </FormControlInput>
-                    <div>
-                        <ButtonIcon icon={IoEyeOff} />
-                    </div>
                 </FormControl>
             </form>
             <br/>
