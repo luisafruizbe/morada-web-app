@@ -32,13 +32,13 @@ export const Signup = () => {
                 <FormControl>
                     <FormControlInput>
                         <label>Identificacion</label>
-                        <input type="number"/>
+                        <input type="text"/>
                     </FormControlInput>
                 </FormControl>
                 <FormControl>
                     <FormControlInput>
                         <label>Celular</label>
-                        <input type="number"/>
+                        <input type="number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"/>
                     </FormControlInput>
                 </FormControl>
                 <FormControl>
@@ -64,6 +64,9 @@ export const Signup = () => {
                     </div>
                 </FormControl>
             </form>
+            <br/>
+            <Button label="Registrarse" onPress={() => alert('Registrado exitosamente')}/>
+           
         </Page>        
     )
 };
