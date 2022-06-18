@@ -22,6 +22,7 @@ export const MenuItemWrapper = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 10px;
     svg{
         color: #4A148C;
         font-size: 1.3em;

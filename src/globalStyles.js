@@ -11,8 +11,11 @@ export const GlobalStyle = createGlobalStyle`
         font-family: "Lato";
     }
 `;
-export const PageTitle = styled.p`
+
+export const PageTitle = styled.h1`
   font-size: 2.0em;
+  color: #222;
+  font-weight: 300;
 `;
 export const Subtitle = styled.p`
   color: #C0C2D2;

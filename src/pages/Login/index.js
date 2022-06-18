@@ -1,9 +1,9 @@
+import { useState } from 'react'
 import {Page} from '../../components/Page'
 import { FormControl, PageTitle, FormControlInput, FormControlAction } from '../../globalStyles'
 import { Button } from '../../components/Button'
-import { IoEyeOff } from "react-icons/io5"
+import { IoEyeOff, IoEye } from "react-icons/io5"
 import { ButtonIcon } from '../../components/ButtonIcon'
-import { useState } from 'react'
 
 export const Login = () => {
 
@@ -26,21 +26,19 @@ export const Login = () => {
                 </FormControl>
                 <FormControl>
                     <FormControlInput>
-                        <FormControlAction>
-                            <label>Contraseña</label>
-                            <input type={visiblePass ? "text" : "password"} />
-                        </FormControlAction>
+                        <label>Contraseña</label>
+                        <input type={visiblePass ? "text" : "password"} />
                     </FormControlInput>
-                    <div>
-                        <ButtonIcon icon={IoEyeOff} onPress={tooglePassWordVisible} />
-                    </div>
+                    <FormControlAction>
+                        <ButtonIcon icon={visiblePass ? IoEye:IoEyeOff} onPress={tooglePassWordVisible} />
+                    </FormControlAction>
                 </FormControl>
                 <br/>
                 <Button label="Ingresa" onPress={() => alert('iniciar sesion')}/>
             </form>
             <br />
             <p>
-                ¿Aun no tienes cuenta?
+                ¿Aún no tienes cuenta?
                 <br /> 
                 <a href='http://localhost:3000/Signup'>Registrate</a>
             </p>
